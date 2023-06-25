@@ -1,5 +1,12 @@
+.vh-300 {
+    height: 300vh;
+}
+.vh-200 {
+    height: 200vh;
+}
 .intro_1 {
     background-image: url("../photo/illustrate-1.jpg");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
