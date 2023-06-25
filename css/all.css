@@ -1,12 +1,17 @@
-.vh-300 {
-    height: 300vh;
-}
-.vh-200 {
-    height: 200vh;
-}
 .intro_1 {
+    position: relative;
+  }
+  
+  .intro_1:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
     background-image: url("../photo/illustrate-1.jpg");
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
-}
+  }
+/*   
