@@ -1,7 +1,7 @@
 $(document).ready(function() {
     setTimeout(function() {
         $('.others').addClass('others_none');
-    }, 10);
+    }, 1000);
 });
 
 
@@ -18,6 +18,7 @@ function nextPage() {
         console.log("cool");
         // $(".others").addClass("active-page");
         $(".others").removeClass("others_none");
+        // $('.others').load('index.html .others');
 
 
     }
