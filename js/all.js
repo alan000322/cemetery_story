@@ -10,12 +10,22 @@
 
 var currentPageIndex = 0;
 var pages = document.getElementsByClassName("page");
+var pages_spotlight = document.getElementsByClassName("page_spotlight");
 
 function previousPage() {
     if (currentPageIndex > 0 ) {
         pages[currentPageIndex].classList.remove("active-page");
         currentPageIndex--;
         pages[currentPageIndex].classList.add("active-page");
+    }
+
+}
+
+function previousPageSpotlight() {
+    if (currentPageIndex > 0 ) {
+        pages_spotlight[currentPageIndex].classList.remove("active-page");
+        currentPageIndex--;
+        pages_spotlight[currentPageIndex].classList.add("active-page");
     }
 
 }
@@ -36,8 +46,14 @@ function previousPage() {
 //     }, {passive:true});
 // }
 
-
-
+function nextPageSpotlight() {
+    if (currentPageIndex < pages_spotlight.length - 1) {
+        console.log(currentPageIndex)
+        pages_spotlight[currentPageIndex].classList.remove("active-page");
+        currentPageIndex++;
+        pages_spotlight[currentPageIndex].classList.add("active-page");
+    }
+}
 function nextPage() {
     if (currentPageIndex < pages.length - 1) {
         console.log(currentPageIndex)
