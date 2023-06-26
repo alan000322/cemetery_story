@@ -1,11 +1,11 @@
 .vh-10 {
     height: 10vh;
 }
-.vh-md-20_25 {
+.vh-md-20_30 {
     height: 20vh;
 }
 
-.vh-md-20_15 {
+.vh-md-20_10 {
     height: 20vh;
 }
 .vh-20 {
@@ -13,11 +13,11 @@
 }
 
 @media (max-width: 768px) {
-    .vh-md-20_25 {
-        height: 25vh;
+    .vh-md-20_30 {
+        height: 30vh;
     }
-    .vh-md-20_15 {
-    height: 15vh;
+    .vh-md-20_10 {
+    height: 10vh;
 }
   }
 
