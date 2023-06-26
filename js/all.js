@@ -3,9 +3,9 @@
 //         $('.others').addClass('others_none');
 //     }, 1000);
 // });
-$(document).ready(function () {
-    disableScroll();
-});
+// $(document).ready(function () {
+//     disableScroll();
+// });
 
 
 var currentPageIndex = 0;
@@ -20,33 +20,34 @@ function previousPage() {
 
 }
 
-function disableScroll() {
-    document.documentElement.style.overflowY = "hidden";
-    document.body.addEventListener('touchmove', function(e) {
-        e.preventDefault();
+// function disableScroll() {
+//     document.documentElement.style.overflowY = "hidden";
+//     document.body.addEventListener('touchmove', function(e) {
+//         e.preventDefault();
 
-    }, {passive:false});
-}
+//     }, {passive:false});
+// }
 
-function canScroll() {
-    document.documentElement.style.overflowY = "scroll";
-    document.body.addEventListener('touchmove', function(e) {
-        e.preventDefault();
+// function canScroll() {
+//     document.documentElement.style.overflowY = "scroll";
+//     document.body.addEventListener('touchmove', function(e) {
+//         e.preventDefault();
 
-    }, {passive:true});
-}
+//     }, {passive:true});
+// }
 
 
 
 function nextPage() {
     if (currentPageIndex < pages.length - 1) {
+        console.log(currentPageIndex)
         pages[currentPageIndex].classList.remove("active-page");
         currentPageIndex++;
         pages[currentPageIndex].classList.add("active-page");
 
-        if (currentPageIndex == pages.length - 1) {
-            canScroll();
-        }
+        // if (currentPageIndex == pages.length - 1) {
+        //     canScroll();
+        // }
     // }
     // if (currentPageIndex == pages.length - 1) {
     //     console.log("cool");
