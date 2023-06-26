@@ -7,7 +7,16 @@ $(document).ready(function() {
 
 var currentPageIndex = 0;
 var pages = document.getElementsByClassName("page");
-  
+
+function previousPage() {
+    if (currentPageIndex > 0 ) {
+        pages[currentPageIndex].classList.remove("active-page");
+        currentPageIndex--;
+        pages[currentPageIndex].classList.add("active-page");
+    }
+}
+
+
 function nextPage() {
     if (currentPageIndex < pages.length - 1) {
         pages[currentPageIndex].classList.remove("active-page");
