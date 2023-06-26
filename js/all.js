@@ -9,7 +9,8 @@ function nextPage() {
     }
     if (currentPageIndex == pages.length - 1) {
         console.log("cool");
-        $(".others").addClass("active-page");
+        // $(".others").addClass("active-page");
+        $(".others").removeClass("others_none");
 
 
     }
