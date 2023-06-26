@@ -22,6 +22,18 @@ function previousPage() {
 
 function disableScroll() {
     document.documentElement.style.overflowY = "hidden";
+    document.body.addEventListener('touchmove', function(e) {
+        e.preventDefault();
+
+    }, {passive:false});
+}
+
+function canScroll() {
+    document.documentElement.style.overflowY = "scroll";
+    document.body.addEventListener('touchmove', function(e) {
+        e.preventDefault();
+
+    }, {passive:true});
 }
 
 
@@ -33,7 +45,7 @@ function nextPage() {
         pages[currentPageIndex].classList.add("active-page");
 
         if (currentPageIndex == pages.length - 1) {
-            document.documentElement.style.overflowY = "scroll";
+            canScroll();
         }
     // }
     // if (currentPageIndex == pages.length - 1) {

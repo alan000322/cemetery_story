@@ -67,7 +67,7 @@
     width: 100vw;
 }
 .intro_2 {
-    background-image: url("../photo/illustrate-1.jpg");
+    background-color: black;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
