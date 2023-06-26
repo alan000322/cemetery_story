@@ -11,12 +11,13 @@
     <div class="vh-100">
         <button class="btn btn-primary" onclick="test()">按我</button>
     </div>
-    <div class="others others_none">
+    <div class="others">
         <script>
             (function() {
               var namespace = '__twreporterEmbeddedData';
               var pkg = 'scrollable-video';
               if (typeof window != 'undefined') {
+                console.log("TRUE")
                 if (!window.hasOwnProperty(namespace)) {
                   window[namespace] = {};
                 }

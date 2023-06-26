@@ -65,6 +65,7 @@
     background-position: center;
     background-attachment: fixed;
     width: 100vw;
+    height: 100vh;
 }
 
 .square-box {
@@ -130,7 +131,7 @@
 }
 
 .others {
-    
+
 }
 
 .others_none {

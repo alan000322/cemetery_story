@@ -1,6 +1,13 @@
+$(document).ready(function() {
+    setTimeout(function() {
+        $('.others').addClass('others_none');
+    }, 10);
+});
+
+
 var currentPageIndex = 0;
 var pages = document.getElementsByClassName("page");
-        
+  
 function nextPage() {
     if (currentPageIndex < pages.length - 1) {
         pages[currentPageIndex].classList.remove("active-page");
@@ -14,4 +21,7 @@ function nextPage() {
 
 
     }
+}
+function test() {
+    $(".others").removeClass("others_none");
 }
