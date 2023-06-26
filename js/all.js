@@ -18,6 +18,8 @@ function nextPage() {
         console.log("cool");
         // $(".others").addClass("active-page");
         $(".others").removeClass("others_none");
+        // location.reload();
+        $(".others").reload();
         // $('.others').load('index.html .others');
 
 
