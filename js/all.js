@@ -1,7 +1,10 @@
-$(document).ready(function() {
-    setTimeout(function() {
-        $('.others').addClass('others_none');
-    }, 1000);
+// $(document).ready(function() {
+//     setTimeout(function() {
+//         $('.others').addClass('others_none');
+//     }, 1000);
+// });
+$(document).ready(function () {
+    disableScroll();
 });
 
 
@@ -14,7 +17,13 @@ function previousPage() {
         currentPageIndex--;
         pages[currentPageIndex].classList.add("active-page");
     }
+
 }
+
+function disableScroll() {
+    document.documentElement.style.overflowY = "hidden";
+}
+
 
 
 function nextPage() {
@@ -22,18 +31,19 @@ function nextPage() {
         pages[currentPageIndex].classList.remove("active-page");
         currentPageIndex++;
         pages[currentPageIndex].classList.add("active-page");
-    }
-    if (currentPageIndex == pages.length - 1) {
-        console.log("cool");
-        // $(".others").addClass("active-page");
-        $(".others").removeClass("others_none");
-        // location.reload();
-        $(".others").reload();
-        // $('.others').load('index.html .others');
+
+        if (currentPageIndex == pages.length - 1) {
+            document.documentElement.style.overflowY = "scroll";
+        }
+    // }
+    // if (currentPageIndex == pages.length - 1) {
+    //     console.log("cool");
+    //     // $(".others").addClass("active-page");
+    //     $(".others").removeClass("others_none");
+    //     // location.reload();
+    //     $(".others").reload();
+    //     // $('.others').load('index.html .others');
 
 
     }
-}
-function test() {
-    $(".others").removeClass("others_none");
 }

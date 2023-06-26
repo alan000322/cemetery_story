@@ -65,7 +65,13 @@
     background-position: center;
     background-attachment: fixed;
     width: 100vw;
-    height: 100vh;
+}
+.intro_2 {
+    background-image: url("../photo/illustrate-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100vw;
 }
 
 .square-box {
