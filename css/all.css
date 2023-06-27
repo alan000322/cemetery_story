@@ -181,6 +181,10 @@ p {
     display: none;
 }
 
+.bg-black {
+    background-color: black;
+}
+
 .active-page {
     display: block;
     z-index: 999;
