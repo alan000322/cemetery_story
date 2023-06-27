@@ -1,6 +1,7 @@
 * {
     letter-spacing: 0.5px;
 }
+
 p {
     line-height: 1.8;
     font-size: 18px;
@@ -11,6 +12,7 @@ p {
 .vh-10 {
     height: 10vh;
 }
+
 .vh-md-20_30 {
     height: 20vh;
 }
@@ -18,12 +20,15 @@ p {
 .vh-md-20_10 {
     height: 20vh;
 }
+
 .vh-md-80_70 {
     height: 80vh;
 }
+
 .vw-md-80_70 {
     width: 80vw;
 }
+
 .vh-20 {
     height: 20vh;
 }
@@ -36,38 +41,48 @@ p {
     .vh-md-20_30 {
         height: 30vh;
     }
+
     .vh-md-20_10 {
-    height: 10vh;
+        height: 10vh;
+    }
+
+    .vh-md-80_70 {
+        height: 70vh;
+    }
+
+    .vw-md-80_70 {
+        width: 70vw;
+    }
+
+    .w-md-50_25 {
+        width: 25%;
+    }
 }
-.vh-md-80_70 {
-    height: 70vh;
-}
-.vw-md-80_70 {
-    width: 70vw;
-}
-.w-md-50_25 {
-    width: 25%;
-}
-  }
 
 .vh-30 {
     height: 30vh;
 }
+
 .vh-40 {
     height: 40vh;
 }
+
 .vh-50 {
     height: 50vh;
 }
+
 .vh-60 {
     height: 60vh;
 }
+
 .vh-70 {
     height: 70vh;
 }
+
 .vh-80 {
     height: 80vh;
 }
+
 .vh-90 {
     height: 90vh;
 }
@@ -96,6 +111,7 @@ p {
     background-attachment: fixed;
     width: 100vw;
 }
+
 .intro_2 {
     background-color: black;
     background-size: cover;
@@ -141,6 +157,7 @@ p {
     opacity: 0;
     animation: fadeIn 1s ease-in-out forwards;
 }
+
 .fade-in2 {
     opacity: 0;
     animation: fadeOut 1s ease-in-out forwards;
@@ -156,6 +173,7 @@ p {
         opacity: 1;
     }
 }
+
 @keyframes fadeOut {
     0% {
         opacity: 1;
@@ -166,6 +184,7 @@ p {
         color: black;
     }
 }
+
 @keyframes fadeIn2 {
     0% {
         opacity: 1;
@@ -177,9 +196,7 @@ p {
     }
 }
 
-.others {
-
-}
+.others {}
 
 .others_none {
     display: none;
