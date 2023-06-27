@@ -1,11 +1,11 @@
 * {
     letter-spacing: 0.5px;
     font-family: 'Noto Serif TC', serif;
+    font-size: 18px;
 }
 
 p {
     line-height: 1.8;
-    font-size: 18px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
