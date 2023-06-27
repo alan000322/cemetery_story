@@ -214,15 +214,15 @@ p {
 }
 
 .change_border {
-    border-right: 2px solid #999999;
-    width: 13px;
+    border-right: 4px solid #999999;
+    width: 16px;
     height: 100%;
     position: absolute;
     left: 0;
     top: 0;
 }
 
-.jiylIS::before {
+.short_gun::before {
     content: '';
     display: block;
     height: 3px;
