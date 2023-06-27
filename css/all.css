@@ -1,5 +1,6 @@
 * {
     letter-spacing: 0.5px;
+    font-family: 'Noto Serif TC', serif;
 }
 
 p {
@@ -210,4 +211,24 @@ p {
     display: block;
     z-index: 999;
     /* 顯示當前頁面 */
+}
+
+.change_border {
+    border-right: 2px solid #999999;
+    width: 13px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.jiylIS::before {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 16px;
+    background: #999999;
+    position: absolute;
+    top: 23px;
+    left: -8px;
 }
