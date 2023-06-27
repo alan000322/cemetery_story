@@ -1,3 +1,9 @@
+p {
+    line-height: 1.8;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .vh-10 {
     height: 10vh;
 }
