@@ -232,3 +232,17 @@ p {
     top: 23px;
     left: -8px;
 }
+
+.chapter {
+    border: 1000px;
+    color: red;
+    z-index: 999;
+}
+
+.centered-image {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+}
