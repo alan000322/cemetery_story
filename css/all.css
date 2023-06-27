@@ -1,5 +1,9 @@
+* {
+    letter-spacing: 0.5px;
+}
 p {
     line-height: 1.8;
+    font-size: 18px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
