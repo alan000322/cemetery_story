@@ -192,7 +192,7 @@
             </div>
         </div>
         <!--second part-->
-        <div class="page illustrate-2" id="page6">
+        <div class="page illustrate-2 animate__animated animate__fadeIn" id="page6">
             <div class="position-relative vh-100 d-flex justify-content-center align-items-center">
                 <div class="container-fluid">
                     <div class="vh-md-20_10">
@@ -490,14 +490,20 @@
                     </div>
                     <div class="vh-md-20_30">
                         <div class="vh-md-20_25 d-flex row justify-content-around">
-                            下滑
+                            <div class="col-10">
+                                <button class="custom-button w-100 h-100 text-center animate__animated animate__pulse animate__infinite" onclick="previousPage()">
+                                    <i class="bi bi-caret-down-fill text-warning fs-1"></i>
+                                    <p class="fs-6 text-warning p-0">下滑看故事</p>
+                                </button>
+                                
+                            </div>
                             <div class="col-6">
                                 <button class="custom-button w-100 h-100 text-center animate__animated animate__pulse animate__infinite" onclick="previousPage()">
                                     <i class="bi bi-caret-left-square text-light fs-1"></i>
                                 </button>
                             </div>
                             <div class="col-6">
-                                <button class="custom-button w-100 h-100 text-center">
+                                <button class="custom-button w-100 h-100 text-center animate__animated animate__flash animate__infinite" onclick="nextPage()">
                                     
                                 </button>
                             </div>
