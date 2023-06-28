@@ -11,6 +11,7 @@
 var currentPageIndex = 0;
 var pages = document.getElementsByClassName("page");
 var pages_spotlight = document.getElementsByClassName("page_spotlight");
+var notice_status = false;
 
 function previousPage() {
     if (currentPageIndex > 0) {
@@ -19,6 +20,23 @@ function previousPage() {
         pages[currentPageIndex].classList.add("active-page");
     }
 
+}
+
+function checkLastPage() {
+    if (currentPageIndex == pages.length - 1) {
+        notice_status = true
+    }
+}
+
+function DealWithNoticePage() {
+    if (notice_status) {
+        var n = $('.notice');
+        n.addClass('animate__animated animate__fadeOut  animate__delay-1s');
+        setTimeout(function() {
+            n.addClass('d-none');
+        }, 1000);
+        
+    }
 }
 
 
@@ -44,21 +62,16 @@ function nextPage() {
         pages[currentPageIndex].classList.remove("active-page");
         currentPageIndex++;
         pages[currentPageIndex].classList.add("active-page");
-
-        // if (currentPageIndex == pages.length - 1) {
-        //     canScroll();
-        // }
-        // }
-        // if (currentPageIndex == pages.length - 1) {
-        //     console.log("cool");
-        //     // $(".others").addClass("active-page");
-        //     $(".others").removeClass("others_none");
-        //     // location.reload();
-        //     $(".others").reload();
-        //     // $('.others').load('index.html .others');
-
+        checkLastPage();
+        DealWithNoticePage();
 
     }
+}
+
+function deleteNotice() {
+    notice_status = true;
+    DealWithNoticePage();
+
 }
 
 
