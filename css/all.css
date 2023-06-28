@@ -249,7 +249,32 @@ p {
     max-height: 100%;
 }
 
+.illustrate-1 {
+    height: 100%;
+    background: url("../photo/illustrate-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment:scroll;
+}
+.illustrate-2 {
+    height: 100%;
+    background: url("../photo/illustrate-2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment:scroll;
+}
+
 .topic-1 {
+    height: 100%;
+    background: url("../photo/topic-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment:scroll;
+}
+.topic-2 {
     height: 100%;
     background: url("../photo/topic-2.jpg");
     background-repeat: no-repeat;
