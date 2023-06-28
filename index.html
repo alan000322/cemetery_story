@@ -15,6 +15,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Line Chart-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+
     <link rel="stylesheet" href="css/all.css">
 
 
@@ -620,9 +623,10 @@
                     <div class="container-fluid">
 
                         <div class="vh-md-80_70 row d-flex align-items-center justify-content-center">
-                            <div class="card rounded-round w-75 border-primary border-light border-5 bg-secondary rounded-pill">
-                                <h2 class="pt-3 fw-bold text-center text-light">城市空間蔓延</h2>
-                                <h2 class="pb-3 fw-bold text-center text-light">城市空間蔓延生者與亡者的界線衝突</h2>
+                            <div class="card rounded-round border-primary border-light border-5 bg-secondary rounded-pill shadow"
+                                style="max-width: 75%;">
+                                <h2 class="pt-3 fs-4 fw-bold text-center text-light">城市空間蔓延</h2>
+                                <h2 class="pb-2 fs-4 fw-bold text-center text-light">生者與亡者的界線衝突</h2>
 
                             </div>
                         </div>
@@ -824,7 +828,8 @@
                                                 <div class="hh6u4x-1 kLEdSJ">
                                                     <div class="hh6u4x-2 eJVLGN">
                                                         <div>
-                                                            <p class="hh6u4x-4 fbmAcP text-warning">臺南市政府民政局2018年公告，原訂 2021
+                                                            <p class="hh6u4x-4 fbmAcP text-warning">臺南市政府民政局2018年公告，原訂
+                                                                2021
                                                                 年完成分期分區遷葬，但部分民眾與文史團體積極爭取文資審議，遷葬因此暫停，繼續進行審議。</p>
                                                         </div>
                                                     </div>
@@ -991,16 +996,48 @@
             src="https://unpkg.com/@twreporter/scrollable-video@1.0.3/dist/main.86a0a5788205961bf35c.bundle.js">
         </script>
 
-        <div class="bg-black vh-30"></div>
+        <div class="bg-black vh-10"></div>
 
         <div class="bg-black text-light">
-            <div class="topic-2">
+            <div class="container pt-3">
+                <div class="row p-3 d-flex justify-content-center">
+                    <div class="col-md-6">
+                        <p>
+                            即使殯葬設施與生死緊密相連，其實也是城市中的基礎建設之一，治葬方式的變遷則反映了一座城市對於土地利用的想像。據內政部統計，臺南地區採土葬方式治葬的比例從2001的9.6%，降至2021年的0.3%。臺南地區公墓的面積則是在此10年間共減少66,347公頃，相當於3400座2022年卡達世界盃足球賽主場。
+                        </p>
+                        <div class="line-chart my-5">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-md-10 text-light py-3 my-2">
+                                    <div><canvas id="lineChart1" style="font-style: red;"></canvas></div>
+                                </div>
+                                <div class="col-md-10 text-light pt-3 mt-2">
+                                    <div><canvas id="lineChart2"></canvas></div>
+                                </div>
+                                <div class="col-md-8 text-center">
+                                    <span style="font-size: 12px; color: rgb(216, 216, 216);">2001~2021年臺南市公墓數量與土葬面積統計（資料來源：）</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            但隨著地價逐年攀升、都市稠密程度與人口增加，對於開發的渴望難以消退。沒有商業或製造業用地象徵的產值，也沒有建地可以帶來的房市紅利，公墓成為臺灣都市規劃者積極「處理」的目標，周邊的居民也對遷葬樂見其成。家就住在南山公墓附近的市民對此表示，希望趕快完成這一項工程，讓臺南市南區有更多的發展和可利用的土地。
+                        </p>
+                        <p>
+                            <b class="text-warning">「這裡又沒有什麼名人，有什麼值得保留的？」</b>附近居民和遷葬工程人員站在挖土機旁，看著幾乎一望無際的公墓這樣說。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--chapter 2-->
+        <div class="bg-black text-light">
+            <div class="topic-2 ">
                 <div class="position-relative vh-100 d-flex justify-content-center align-items-start">
                     <div class="container-fluid">
 
                         <div class="vh-md-80_70 row d-flex align-items-center justify-content-center">
-                            <div class="card rounded-round w-75 border-primary border-light border-5 bg-secondary rounded-pill">
-                                <h2 class="pt-3 fw-bold text-center text-light">都市建設擴張與墓葬文化保存的競合難題</h2>
+                            <div class="card rounded-round border-primary border-light border-5 bg-secondary rounded-pill shadow"
+                                style="max-width: 90%;">
+                                <h2 class="pt-3 pb-2 fs-4 fw-bold text-center text-light">南山公墓文化保存的可能</h2>
 
                             </div>
                         </div>
@@ -1009,14 +1046,77 @@
                     </div>
                 </div>
             </div>
-            <div class="container pt-3">
-                <div class="row p-3 pt-5 d-flex justify-content-center">
-                    <div class="col-md-6">
-                        <h3 class="py-3 fw-bold"></h3>
-                        <p>
-                            即使殯葬設施與生死緊密相連，其實也是城市中的基礎建設之一，治葬方式的變遷則反映了一座城市對於土地利用的想像。據內政部統計，臺南地區採土葬方式治葬的比例從2001的9.6%，降至2021年的0.3%。臺南地區公墓的面積則是在此10年間共減少66,347公頃，相當於3400座2022年卡達世界盃足球賽主場。
-                        </p>
+
+            <div class="row p-3 pt-5 d-flex justify-content-center">
+                <div class="col-md-8 py-4 mb-4">
+                    <div class="card bg-dark border-3 p-2 text-center border-light">
+                        「都市建設與墓葬文化保存未必是零和遊戲，保留墓葬文化可以為持續發展中的都市建立更多樣且立體的面貌。」
                     </div>
+                </div>
+                <div class="col-md-6">
+                    <p>
+                        除了歷史名人與地方仕紳的墓塚，南山公墓還蘊藏了什麼哪些文史價值，讓文史工作者們積極奔走相告、為其請命？
+                    </p>
+                    <p>
+                        國立臺南藝術大學藝術歷史學系教授盧泰康表示，南山公墓數百年來的積累與發展，已經讓它形成一個臺灣古墓類文化資產密碼的重要寶庫，保存了臺南先民生活和喪葬禮俗的軌跡。墓碑上的「堂號」、祖籍或出生地，就是臺灣多元、複雜的移民社會與國族認同變遷的見證。同一個氏族的先人，他們墓碑上印刻著的字，從吳家人的堂號「渤海」、王家人的堂號「白礁」，經過代代的遷移與開枝散葉，逐漸出現「喜樹」、「鹽埕」等等臺南的地名，說明了這些氏族已經認同府城就是自己的歸屬、是落葉歸根的所在。
+
+                    </p>
+                    <p>
+                        而經歷數百年，南山公墓除了地上的墓塚，地下也存在具歷史、藝術和文化價值的文物。李時光指出，2019年一次踏查過程中，就巧遇古物收藏者在墓地裡尋找有價值的陪葬物件，發現了玉器及清朝古幣。她強調，除了地上這些可以代表先民生活痕跡和移民及殖民歷史的墓葬群，地下很可能還有更多的寶藏。
+                    </p>
+                    <p>
+                        除了研究的價值，挖掘古物和歷史文化探索也具有一定的教育和觀光意義。李時光等文史工作者將教育和觀光也視為保存南山公墓的一項訴求，認為都市建設與墓葬文化保存未必是零和遊戲，保留墓葬文化可以為持續發展中的都市建立更多樣且立體的面貌，吸引更多愛好深度文化探索的旅客造訪臺南。
+                    </p>
+                    <p>
+                        在臺南市府的規劃藍圖裡，則是將南山公墓分區建設火化場、殯儀館、納骨塔、環保自然葬區、環保庫錢爐的殯葬專區，以及停車場、生命博物館、緩衝綠帶、公園等周邊公共設施。目前部分墓區已完成遷葬、改建為兒童公園；而絕大多數的區域，因文史團體的呼籲，仍在進行「文資查估」，由臺南市文資審議委員會審議墓區內的建物是否續有保存的價值，再決定是否列冊追蹤，近一步評估、列為文化資產。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--chapter 3-->
+        <div class="bg-black text-light">
+            <div class="topic-3 ">
+                <div class="position-relative vh-100 d-flex justify-content-center align-items-start">
+                    <div class="container-fluid">
+
+                        <div class="vh-md-80_70 row d-flex align-items-center justify-content-center">
+                            <div class="card rounded-round border-primary border-light border-5 bg-secondary rounded-pill shadow"
+                                style="max-width: 90%;">
+                                <h2 class="pt-3 fs-4 fw-bold text-center text-light">髒亂、荒蕪、危險</h2>
+                                <h2 class="pb-2 fs-4 fw-bold text-center text-light">負面形象趁虛而入</h2>
+
+                            </div>
+                        </div>
+                        <div class="vh-md-20_30">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row p-3 pt-5 d-flex justify-content-center">
+                <div class="col-md-8 py-4 mb-4">
+                    <div class="card bg-dark border-3 p-2 text-center border-light">
+                        「都市建設與墓葬文化保存未必是零和遊戲，保留墓葬文化可以為持續發展中的都市建立更多樣且立體的面貌。」
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <p>
+                        面對這超過90公頃的墓地、數百門墓，遷葬作業將是一項浩大的工程。以新竹縣政府公告的公墓遷葬流程規範為例，要將先人從墓地裡掘起，地方政府需要先鑑界、除草、查估及造冊作業，這部分就耗時約4個月。之後，還需要開放墓主——先人的後嗣或墓的所有者——登記遷葬，期間至少需要1年，以利墓主聯絡並告知親友、擇日、選定遷葬位置等。接下來，還必須要會同文資專家，進入公墓勘查，評估公墓範圍內是否有具有文資價值的建物及物品，或者公墓園區是否符合文化資產的定義，得以保留。這一階段也需耗時數月。
+                    </p>
+                    <p>
+                        在完成上述作業後，地方政府會公告遷葬，並給予墓主1-2年的時間遷葬。然而李時光表示，2018年臺南市府公告南山公墓遷葬時，僅給墓主1年的時間，要選定安置先人的塔位、安排遷葬的吉日、聘請相關殯葬作業人員，過程中還要來來回回和親屬溝通，其實相當倉促。
+                        (流程圖(?))
+
+                    </p>
+                    <p>
+                        遷葬的工程浩大，規劃、整頓與美化墓地更是曠日費時，需要整合市府、市民、學者專家多方的意見與。李時光指出，目前南山公墓既已被視作整頓與更新的目標，市府如火如荼地重新規劃土地，民政局殯葬管理處等有關單位已經有了「這裡將來要遷葬、開發」的認知，也就不太會投注資源在整理及維護公墓的現況。長此以往，再加上等待查估與文資審核作業的漫長時光，更加深了墓園髒亂、危險的負面印象，讓南山公墓成為三不管地帶。市府單位疏於管理，部分當地的不肖業者會在人跡罕至的墓區傾倒玻璃、水泥塊等事業廢棄物。（廢土照片）
+                    </p>
+                    <p>
+                        周邊的居民對於疏於管理、被堆置廢棄物的墓地也相當不滿。對此，市府曾採取「公園化」的政策，希望將墓地改造成可供居民休憩活動的空間。不過，臺灣大學城鄉所教授王志弘指出，臺灣官方70、80年代就曾提出公墓公園化的構想，只是成效不彰。研究過臺南、高雄、臺北、雲林等多處公墓保存運動的文資學者賴子儀則表示，由於經費主要由鄉鎮市政府自行籌措，經費有限、公墓被視為嫌惡設施與禁忌之地的情況下，即便招商完成綠美化，也大多是一次性工程，後續缺乏養護，公墓公園依然會逐漸破敗。而現在實行的公墓公園化，大多只是將公墓剷除、建設公園，缺乏新意。
+                    </p>
+                    <p>
+                        走在沙丘地形的南山公墓，高高低低的土坡是河谷侵蝕與風塵堆積的風景，但因為缺乏管理與監督，特殊的風景成為不肖業者的掩護。在地文史工作者李時光透露，自己曾在田野訪查的過程中聽聞有附近民眾發現不肖業者以修葺長年無人看顧的墓室為由，趁機盜取陪葬品變賣；甚至為了方便，將先人遺骨從骨灰罐中倒出，再集中裝罐，部分骨骸散落在地上，與砂石混雜，不細看，幾乎難以辨識。
+                    </p>
                 </div>
             </div>
         </div>
@@ -1026,6 +1126,7 @@
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <!-- Optional JavaScript; choose one of the two! -->
     <script src="./js/all.js"></script>
+    <script src="./js/linechart.js"></script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
