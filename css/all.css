@@ -305,3 +305,10 @@ p {
     position: relative;
     left: 0;
 }
+
+:root {
+    --animate-delay: 0.2s;
+  }
+  
+
+  
