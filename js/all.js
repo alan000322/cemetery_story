@@ -13,7 +13,7 @@ var pages = document.getElementsByClassName("page");
 var pages_spotlight = document.getElementsByClassName("page_spotlight");
 
 function previousPage() {
-    if (currentPageIndex > 0 ) {
+    if (currentPageIndex > 0) {
         pages[currentPageIndex].classList.remove("active-page");
         currentPageIndex--;
         pages[currentPageIndex].classList.add("active-page");
@@ -21,14 +21,6 @@ function previousPage() {
 
 }
 
-function previousPageSpotlight() {
-    if (currentPageIndex > 0 ) {
-        pages_spotlight[currentPageIndex].classList.remove("active-page");
-        currentPageIndex--;
-        pages_spotlight[currentPageIndex].classList.add("active-page");
-    }
-
-}
 
 // function disableScroll() {
 //     document.documentElement.style.overflowY = "hidden";
@@ -46,14 +38,6 @@ function previousPageSpotlight() {
 //     }, {passive:true});
 // }
 
-function nextPageSpotlight() {
-    if (currentPageIndex < pages_spotlight.length - 1) {
-        console.log(currentPageIndex)
-        pages_spotlight[currentPageIndex].classList.remove("active-page");
-        currentPageIndex++;
-        pages_spotlight[currentPageIndex].classList.add("active-page");
-    }
-}
 function nextPage() {
     if (currentPageIndex < pages.length - 1) {
         console.log(currentPageIndex)
@@ -64,15 +48,35 @@ function nextPage() {
         // if (currentPageIndex == pages.length - 1) {
         //     canScroll();
         // }
-    // }
-    // if (currentPageIndex == pages.length - 1) {
-    //     console.log("cool");
-    //     // $(".others").addClass("active-page");
-    //     $(".others").removeClass("others_none");
-    //     // location.reload();
-    //     $(".others").reload();
-    //     // $('.others').load('index.html .others');
+        // }
+        // if (currentPageIndex == pages.length - 1) {
+        //     console.log("cool");
+        //     // $(".others").addClass("active-page");
+        //     $(".others").removeClass("others_none");
+        //     // location.reload();
+        //     $(".others").reload();
+        //     // $('.others').load('index.html .others');
 
 
     }
 }
+
+
+// window.addEventListener('load', function () {
+//     var img = document.querySelector('.responsive-image');
+//     var mobileSrc = './photo/topic-1-mobile.jpg';
+
+//     function updateImageSrc() {
+//         if (window.innerWidth < 768) {
+//             img.src = mobileSrc;
+//         } else {
+//             img.src = './photo/topic-1.jpg';
+//         }
+//     }
+
+//     // Update image source on initial load
+//     updateImageSrc();
+
+//     // Update image source on window resize
+//     window.addEventListener('resize', updateImageSrc);
+// });

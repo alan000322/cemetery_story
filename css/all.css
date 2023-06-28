@@ -5,6 +5,8 @@
 }
 
 p {
+    margin: 0;
+    padding-left: 4px;
     line-height: 1.8;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -245,4 +247,13 @@ p {
     transform: translate(-50%, -50%);
     max-width: 100%;
     max-height: 100%;
+}
+
+.topic-1 {
+    height: 100%;
+    background: url("../photo/topic-2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment:scroll;
 }
