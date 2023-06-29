@@ -19,6 +19,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
 
     <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/loading.css">
 
 
     <title>獨留青塚向黃昏 臺南南山公墓保存困境與展望</title>
@@ -26,8 +27,21 @@
 
 <body>
 
+
     <!-- unpkg -->
     <!-- <script src="https://unpkg.com/@barba/core"></script> -->
+
+    <!-- <div id="preloader">
+        <div class="loading-page" id="loading-page">
+            <div class="loadingio-spinner-ripple-p8cw0hoeed">
+                <div class="ldio-wbtc0ytzwq">
+                    <div></div>
+                    <div></div>
+                    <div class="text-center"></div>Loading
+                </div>
+            </div>
+        </div>
+    </div> -->
     <div class="position-relative">
         <!-- <figure class="d-block m-0">
             <img class="position-absolute vh-100 vw-100" src="./photo/illustrate-1.jpg" alt="封面圖片">
@@ -210,7 +224,7 @@
             </div>
         </div>
         <!--second part-->
-        <div class="page illustrate-2 animate__animated animate__fadeIn" id="page6">
+        <div class="page illustrate-1" id="page6">
             <div class="position-relative vh-100 d-flex justify-content-center align-items-center">
                 <div class="container-fluid">
                     <div class="vh-md-20_10">
@@ -245,7 +259,7 @@
                 </div>
             </div>
         </div>
-        <div class="page illustrate-2" id="page7">
+        <div class="page illustrate-1" id="page7">
             <div class="position-relative vh-100 d-flex justify-content-center align-items-start">
                 <div class="container-fluid">
 
@@ -285,7 +299,7 @@
                 </div>
             </div>
         </div>
-        <div class="page illustrate-2" id="page8">
+        <div class="page illustrate-1" id="page8">
             <div class="position-relative vh-100 d-flex justify-content-center align-items-start">
                 <div class="container-fluid">
 
@@ -325,7 +339,7 @@
                 </div>
             </div>
         </div>
-        <div class="page illustrate-2" id="page9">
+        <div class="page illustrate-1" id="page9">
             <div class="position-relative vh-100 d-flex justify-content-center align-items-start">
                 <div class="container-fluid">
 
@@ -365,7 +379,7 @@
                 </div>
             </div>
         </div>
-        <div class="page illustrate-2" id="page10">
+        <div class="page illustrate-1" id="page10">
             <div class="position-relative vh-100 d-flex justify-content-center align-items-start">
                 <div class="container-fluid">
 
@@ -405,7 +419,7 @@
                 </div>
             </div>
         </div>
-        <div class="page illustrate-2" id="page11">
+        <div class="page illustrate-1" id="page11">
             <div class="position-relative vh-100 d-flex justify-content-center align-items-start">
                 <div class="container-fluid">
 
@@ -445,7 +459,7 @@
                 </div>
             </div>
         </div>
-        <div class="page illustrate-2" id="page12">
+        <div class="page illustrate-1" id="page12">
             <div class="position-relative vh-100 d-flex justify-content-center align-items-start">
                 <div class="container-fluid">
 
@@ -485,7 +499,7 @@
                 </div>
             </div>
         </div>
-        <div class="page illustrate-2" id="page13">
+        <div class="page illustrate-1" id="page13">
             <div class="position-relative vh-100 d-flex justify-content-center align-items-start">
                 <div class="container-fluid">
 
@@ -525,7 +539,7 @@
                 </div>
             </div>
         </div>
-        <div class="page illustrate-2" id="page14">
+        <div class="page illustrate-1" id="page14">
             <div class="position-relative vh-100 d-flex justify-content-center align-items-center">
                 <div class="container-fluid">
                     <div class="vh-md-20_10">
@@ -1223,13 +1237,16 @@
                                 <div class="card solution-card-1">
                                     <div class="row g-0">
                                         <div class="col-md-4">
-                                            <img src="./photo/recraft/organization-discussion.png" class="img-fluid rounded-start w-100 ps-1 pt-1" alt="...">
-                                            <figcaption class="figure-caption text-end py-2" style="font-size: 8px;">繪製/Recraft AI</figcaption>
+                                            <img src="./photo/recraft/organization-discussion.png"
+                                                class="img-fluid rounded-start w-100 ps-1 pt-1" alt="...">
+                                            <figcaption class="figure-caption text-end py-2" style="font-size: 8px;">
+                                                繪製/Recraft AI</figcaption>
                                         </div>
                                         <div class="col-md-8">
                                             <div class="card-body">
                                                 <h5 class="card-title pt-2">串連各地方公墓文史團體</h5>
-                                                <p class="card-text">讓墓葬場域與文化保存議題成為全國性的議題，以此向文化部提出請願。同時，因議題可能更受重視，可要求官方進行考古試掘，探勘更豐富、更深度的文化資產，提升公墓的文化價值。
+                                                <p class="card-text">
+                                                    讓墓葬場域與文化保存議題成為全國性的議題，以此向文化部提出請願。同時，因議題可能更受重視，可要求官方進行考古試掘，探勘更豐富、更深度的文化資產，提升公墓的文化價值。
                                                 </p>
                                             </div>
                                         </div>
@@ -1240,17 +1257,22 @@
                                 <div class="card solution-card-2">
                                     <div class="row g-0">
                                         <div class="col-md-4">
-                                            <img src="./photo/recraft/list.png" class="img-fluid rounded-start w-100 ps-1 pt-1" alt="...">
-                                            <figcaption class="figure-caption text-end py-2" style="font-size: 8px;">繪製/Recraft AI</figcaption>
+                                            <img src="./photo/recraft/list.png"
+                                                class="img-fluid rounded-start w-100 ps-1 pt-1" alt="...">
+                                            <figcaption class="figure-caption text-end py-2" style="font-size: 8px;">
+                                                繪製/Recraft AI</figcaption>
                                         </div>
                                         <div class="col-md-8">
                                             <div class="card-body">
                                                 <h5 class="card-title pt-2">「文化資產」定義多元化</h5>
-                                                <p class="card-text">垃圾、治安、河川污染等問題威脅著南山公墓的保存，而被認為是救命稻草、能讓公墓的文化與歷史價值被看見的《文化資產保存法》，李時光卻認為，其實強制力相當有限。賴子儀則表示，《文化資產保存法》中只有提到破壞或未妥善維護「古蹟」、「暫定古蹟」、「考古遺址」、「國寶」、「重要或一般古物」者，將面臨罰則。
+                                                <p class="card-text">
+                                                    垃圾、治安、河川污染等問題威脅著南山公墓的保存，而被認為是救命稻草、能讓公墓的文化與歷史價值被看見的《文化資產保存法》，李時光卻認為，其實強制力相當有限。賴子儀則表示，《文化資產保存法》中只有提到破壞或未妥善維護「古蹟」、「暫定古蹟」、「考古遺址」、「國寶」、「重要或一般古物」者，將面臨罰則。
                                                 </p>
-                                                <p class="card-text">然而這些文化資產的定義相當嚴苛，在主流的認知中，只有與名人相關、符合高級文化與藝術審美的建物、空間、物件，才被列為文化資產。
+                                                <p class="card-text">
+                                                    然而這些文化資產的定義相當嚴苛，在主流的認知中，只有與名人相關、符合高級文化與藝術審美的建物、空間、物件，才被列為文化資產。
                                                 </p>
-                                                <p class="card-text">賴子儀認為，文化資產的保存除了是保存一個可以安放歷史與記憶的空間和物質，保存也是一種「社會行動」，去串聯與說服民眾共同來關心、商議如何記憶一段歷史，同時也開放這個空間讓所有人協調如何面對與歷史相關的社會議題。
+                                                <p class="card-text">
+                                                    賴子儀認為，文化資產的保存除了是保存一個可以安放歷史與記憶的空間和物質，保存也是一種「社會行動」，去串聯與說服民眾共同來關心、商議如何記憶一段歷史，同時也開放這個空間讓所有人協調如何面對與歷史相關的社會議題。
                                                 </p>
                                             </div>
                                         </div>
@@ -1268,13 +1290,17 @@
                                 <div class="card solution-card-3">
                                     <div class="row g-0">
                                         <div class="col-md-4">
-                                            <img src="./photo/recraft/law-book.png" class="img-fluid rounded-start w-100 ps-1 pt-1" alt="...">
-                                            <figcaption class="figure-caption text-end py-2" style="font-size: 8px;">繪製/Recraft AI</figcaption>
+                                            <img src="./photo/recraft/law-book.png"
+                                                class="img-fluid rounded-start w-100 ps-1 pt-1" alt="...">
+                                            <figcaption class="figure-caption text-end py-2" style="font-size: 8px;">
+                                                繪製/Recraft AI</figcaption>
                                         </div>
                                         <div class="col-md-8">
                                             <div class="card-body">
                                                 <h5 class="card-title pt-2">提出不同於公園化、建設殯葬專區的方案</h5>
-                                                <p class="card-text">賴子儀指出，若民間組織可以提出競爭型方案，例如地方創生基地、社區防災區域、寵物安葬園區、歷史文化研究場域等，與市府所提的公墓公園化、殯葬專區做出區隔甚至優化，就能讓市民、讓國人看見公墓的更多可能性。同時因為這些競爭方案需要和在地居民或教育工作者的日常活動緊密結合，有機會帶來比「公園」更高的使用率，也可以避免最後閒置、管理不周的問題。</p>
+                                                <p class="card-text">
+                                                    賴子儀指出，若民間組織可以提出競爭型方案，例如地方創生基地、社區防災區域、寵物安葬園區、歷史文化研究場域等，與市府所提的公墓公園化、殯葬專區做出區隔甚至優化，就能讓市民、讓國人看見公墓的更多可能性。同時因為這些競爭方案需要和在地居民或教育工作者的日常活動緊密結合，有機會帶來比「公園」更高的使用率，也可以避免最後閒置、管理不周的問題。
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -1284,17 +1310,21 @@
                                 <div class="card solution-card-4">
                                     <div class="row g-0">
                                         <div class="col-md-4">
-                                            <img src="./photo/recraft/park.png" class="img-fluid rounded-start w-100 ps-1 pt-1" alt="...">
-                                            <figcaption class="figure-caption text-end py-2" style="font-size: 8px;">繪製/Recraft AI</figcaption>
+                                            <img src="./photo/recraft/park.png"
+                                                class="img-fluid rounded-start w-100 ps-1 pt-1" alt="...">
+                                            <figcaption class="figure-caption text-end py-2" style="font-size: 8px;">
+                                                繪製/Recraft AI</figcaption>
                                         </div>
                                         <div class="col-md-8">
                                             <div class="card-body">
                                                 <h5 class="card-title pt-2">分區靈活運用土地</h5>
                                                 <p class="card-text">將公墓依照與住宅區鄉林程度、墓葬聚落等不同性質分區，做不同程度的保留。
                                                 </p>
-                                                <p class="card-text">李時光曾指出，民眾自主遷葬的墓也可以留存，若有一定規模，可以規劃成生命教育園區，保留並將墓葬文化的知識傳承下去，同時提供大眾與旅客一個可以更開放討論生死議題、生命哲學的空間。
+                                                <p class="card-text">
+                                                    李時光曾指出，民眾自主遷葬的墓也可以留存，若有一定規模，可以規劃成生命教育園區，保留並將墓葬文化的知識傳承下去，同時提供大眾與旅客一個可以更開放討論生死議題、生命哲學的空間。
                                                 </p>
-                                                <p class="card-text">賴子儀則表示，與住宅較近的墓區可以結合竹溪生態保育，作為都市綠園；離住宅區較遠的墓區就盡可能維護、保留作為歷史文化研究的基地。保留協商的彈性空間，讓所有族群都能在南山公墓找到安閒自適的所在，更有助於提高保存它的機會，同時靈活運用土地。
+                                                <p class="card-text">
+                                                    賴子儀則表示，與住宅較近的墓區可以結合竹溪生態保育，作為都市綠園；離住宅區較遠的墓區就盡可能維護、保留作為歷史文化研究的基地。保留協商的彈性空間，讓所有族群都能在南山公墓找到安閒自適的所在，更有助於提高保存它的機會，同時靈活運用土地。
                                                 </p>
                                             </div>
                                         </div>
@@ -1305,13 +1335,17 @@
                                 <div class="card solution-card-5">
                                     <div class="row g-0">
                                         <div class="col-md-4">
-                                            <img src="./photo/recraft/cooperation-with.png" class="img-fluid rounded-start w-100 ps-1 pt-1" alt="...">
-                                            <figcaption class="figure-caption text-end py-2" style="font-size: 8px;">繪製/Recraft AI</figcaption>
+                                            <img src="./photo/recraft/cooperation-with.png"
+                                                class="img-fluid rounded-start w-100 ps-1 pt-1" alt="...">
+                                            <figcaption class="figure-caption text-end py-2" style="font-size: 8px;">
+                                                繪製/Recraft AI</figcaption>
                                         </div>
                                         <div class="col-md-8">
                                             <div class="card-body">
                                                 <h5 class="card-title pt-2">民間自辦公民審議</h5>
-                                                <p class="card-text">以「考古試掘」為例，《文資法》僅規範公共工程施作時若發現地下有可能的文化資產，應停工、進行會勘與試掘，屬於勸導性質，非強制。由此可知，仰賴政府擬定保護文化資產並不可行，應借助考古、人類學、歷史學等專家學者之力，向政府施壓修法。</p>
+                                                <p class="card-text">
+                                                    以「考古試掘」為例，《文資法》僅規範公共工程施作時若發現地下有可能的文化資產，應停工、進行會勘與試掘，屬於勸導性質，非強制。由此可知，仰賴政府擬定保護文化資產並不可行，應借助考古、人類學、歷史學等專家學者之力，向政府施壓修法。
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -1341,12 +1375,20 @@
             <div class="col-4">
                 <div class="card text-start p-4">
                     <h2 class="fs-6 fw-bold text-center py-3">製作團隊</h2>
-                    <p class="card-text text-secondary" style="padding-left: 0px; line-height: 1.7; padding-top: 0px; padding-bottom: 20px;">採訪寫作｜郭怜妤</p>
-                    <p class="card-text text-secondary" style="padding-left: 0px; line-height: 1.7; padding-top: 0px; padding-bottom: 20px;">攝影｜郭怜妤</p>
-                    <p class="card-text text-secondary" style="padding-left: 0px; line-height: 1.7; padding-top: 0px; padding-bottom: 20px;">設計｜郭怜妤、何家慈</p>
-                    <p class="card-text text-secondary" style="padding-left: 0px; line-height: 1.7; padding-top: 0px; padding-bottom: 20px;">網頁｜何家慈</p>
-                    <p class="card-text text-secondary" style="padding-left: 0px; line-height: 1.7; padding-top: 0px; padding-bottom: 20px;">協力製作｜黃鈺倫、林長毅、李芷柔（封面設計）</p>
-                    
+                    <p class="card-text text-secondary"
+                        style="padding-left: 0px; line-height: 1.7; padding-top: 0px; padding-bottom: 20px;">採訪寫作｜郭怜妤
+                    </p>
+                    <p class="card-text text-secondary"
+                        style="padding-left: 0px; line-height: 1.7; padding-top: 0px; padding-bottom: 20px;">攝影｜郭怜妤</p>
+                    <p class="card-text text-secondary"
+                        style="padding-left: 0px; line-height: 1.7; padding-top: 0px; padding-bottom: 20px;">設計｜郭怜妤、何家慈
+                    </p>
+                    <p class="card-text text-secondary"
+                        style="padding-left: 0px; line-height: 1.7; padding-top: 0px; padding-bottom: 20px;">網頁｜何家慈</p>
+                    <p class="card-text text-secondary"
+                        style="padding-left: 0px; line-height: 1.7; padding-top: 0px; padding-bottom: 20px;">
+                        協力製作｜黃鈺倫、林長毅、李芷柔（封面設計）</p>
+
                 </div>
             </div>
 
@@ -1360,6 +1402,7 @@
     <script src="./js/all.js"></script>
     <script src="./js/linechart.js"></script>
     <script src="./js/animate.js"></script>
+    <script src="./js/loading.js"></script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
