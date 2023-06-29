@@ -47,6 +47,16 @@ $(window).on('scroll', function () {
     var elementOffsetTop = scrollElement.offset().top;
 
     if (windowScrollTop + windowHeight >= elementOffsetTop) {
+        scrollElement.addClass('animate__animated animate__fadeIn animate__delay-1s');
+    } 
+});
+$(window).on('scroll', function () {
+    var scrollElement = $('.topic-4');
+    var windowHeight = $(window).height();
+    var windowScrollTop = $(window).scrollTop();
+    var elementOffsetTop = scrollElement.offset().top;
+
+    if (windowScrollTop + windowHeight >= elementOffsetTop) {
         scrollElement.addClass('animate__animated animate__fadeIn');
     } 
 });
