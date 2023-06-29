@@ -128,6 +128,6 @@ $(document).ready(function() {
     var guide = $('.guide');
     setTimeout(function() {
         guide.addClass('d-none');
-    }, 4000);
+    }, 10000);
     });
 // Set the timeout
