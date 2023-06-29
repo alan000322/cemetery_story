@@ -51,6 +51,9 @@ p {
 .w-md-50_25 {
     width: 50%;
 }
+.w-md-60_100 {
+    width: 60%;
+}
 
 @media (max-width: 768px) {
     .vh-md-20_30 {
@@ -79,6 +82,10 @@ p {
 
     .vh-md-25_30 {
         height: 30vh
+    }
+
+    .w-md-60_100 {
+        width: 100%;
     }
 }
 
