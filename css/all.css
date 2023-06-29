@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color:  black;
+    background-color: black;
 }
 
 p {
@@ -51,6 +51,7 @@ p {
 .w-md-50_25 {
     width: 50%;
 }
+
 .w-md-60_100 {
     width: 60%;
 }
@@ -155,7 +156,7 @@ p {
     background-color: rgba(255, 255, 255, 0.7);
     /* padding: 40px; */
 }
- 
+
 
 
 .square-box span {
@@ -206,25 +207,17 @@ p {
 }
 
 @keyframes fadeOut {
-    0% {
+    from {
         opacity: 1;
     }
 
-    100% {
+    to {
         opacity: 0;
-        color: black;
     }
 }
 
-@keyframes fadeIn2 {
-    0% {
-        opacity: 1;
-        color: black;
-    }
-
-    100% {
-        opacity: 0;
-    }
+.fade-out {
+    animation: fadeOut 1s ease-in;
 }
 
 .others {}
@@ -283,15 +276,16 @@ p {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment:scroll;
+    background-attachment: scroll;
 }
+
 .illustrate-2 {
     height: 100%;
     background: url("../photo/illustrate-2.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment:scroll;
+    background-attachment: scroll;
 }
 
 .topic-1 {
@@ -300,31 +294,34 @@ p {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment:scroll;
+    background-attachment: scroll;
 }
+
 .topic-2 {
     height: 100%;
     background: url("../photo/topic-2.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment:scroll;
+    background-attachment: scroll;
 }
+
 .topic-3 {
     height: 100%;
-    background: url("../photo/topic-3.jpg"); 
+    background: url("../photo/topic-3.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment:scroll;
+    background-attachment: scroll;
 }
+
 .topic-4 {
     height: 100%;
     background: url("../photo/topic-4.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment:scroll;
+    background-attachment: scroll;
 }
 
 #lineChart1 {
@@ -344,7 +341,4 @@ p {
 
 :root {
     --animate-delay: 0.2s;
-  }
-
-
-
+}
