@@ -28,8 +28,16 @@ p {
     height: 20vh;
 }
 
+.vh-md-25_30 {
+    height: 25vh
+}
+
 .vh-md-80_70 {
     height: 80vh;
+}
+
+.vh-md-70_60 {
+    height: 70vh;
 }
 
 .vw-md-80_70 {
@@ -61,8 +69,16 @@ p {
         width: 70vw;
     }
 
+    .vh-md-70_60 {
+        height: 60vh;
+    }
+
     .w-md-50_25 {
         width: 25%;
+    }
+
+    .vh-md-25_30 {
+        height: 30vh
     }
 }
 
@@ -294,6 +310,14 @@ p {
     background-size: cover;
     background-attachment:scroll;
 }
+.topic-4 {
+    height: 100%;
+    background: url("../photo/topic-4.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment:scroll;
+}
 
 #lineChart1 {
     width: 100%;
@@ -313,5 +337,6 @@ p {
 :root {
     --animate-delay: 0.2s;
   }
-  
+
+
 
